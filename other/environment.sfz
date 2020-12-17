@@ -1,0 +1,33 @@
+<global>loop_mode=one_shot
+
+//lift start 
+<region>key=12 sample=dspstart.wav
+
+//lift stop
+<region>key=14 sample=dspstop.wav
+
+//door opening : 1 or 2 -> round robin
+<group>key=16 seq_length=2 
+<region>seq_position=1 sample=dsdoropn.wav
+<region>seq_position=2 sample=dsbdopn.wav
+
+
+//door closing: 1 or 2 -> round robin
+<group>key=17 seq_length=2 
+<region>seq_position=1 sample=dsdorcls.wav
+<region>seq_position=2 sample=dsbdcls.wav
+
+//switch on
+<region>key=19 sample=dsswtchn.wav
+
+//switch off
+<region>key=21 sample=dsswtchx.wav
+
+//weapon pickup
+<region>key=23 sample=dswpnup.wav
+
+//powerup
+<region>key=14 sample=dsgetpow.wav
+
+//teleport
+<region>key=14 sample=dstelept.wav

@@ -1,0 +1,87 @@
+<global>loop_mode=one_shot
+
+//player activate 
+<region>key=60 sample=dsnoway.wav
+
+//player injured
+<region>key=61 sample=dsplpain.wav
+
+//player : death 1 2 or 3(gibbed) -> round robin
+<group>key=62 seq_length=2 
+<region>seq_position=1 sample=dspldeth.wav
+<region>seq_position=2 sample=dspdiehi.wav
+
+
+//zombie : sight 1 2 or 3-> round robin
+<group>key=64 seq_length=3
+<region>seq_position=1 sample=dsposit1.wav
+<region>seq_position=2 sample=dsposit2.wav
+<region>seq_position=3 sample=dsposit3.wav
+
+//zombie nearby
+<region>key=65 sample=dsposact.wav
+
+//zombie injured
+<region>key=66 sample=dspopain.wav
+
+//zombie : death 1 2 3 -> round robin
+<group>key=67 seq_length=3
+<region>seq_position=1 sample=dspodth1.wav
+<region>seq_position=2 sample=dspodth2.wav
+<region>seq_position=3 sample=dspodth3.wav
+
+//imp: sight 1 or 2 -> round robin 
+<group>key=69 seq_length=2
+<region>seq_position=1 sample=dsbgsit1.wav
+<region>seq_position=2 sample=dsbgsit2.wav
+
+//imp nearby
+<region>key=70 sample=dsbgact.wav
+
+//imp: death 1 or 2 -> round robin 
+<group>key=71 seq_length=2
+<region>seq_position=1 sample=dsbgdth1.wav
+<region>seq_position=2 sample=dsbgdth2.wav
+
+//Demon sight
+<region>key=72 sample=dssgtsit.wav
+
+//Demon nearby
+<region>key=73 sample=dsdmact.wav
+
+//Demon attack
+<region>key=74  sample=dssgtatk.wav
+
+//Demon injured
+<region>key=75 sample=dsdmpain.wav
+
+//Demon death
+<region>key=76  sample=dssgtdth.wav
+
+//Hell Knight or Baron of Hell Sight -> round robin 
+<group>key=77 seq_length=2 
+<region>seq_position=1 sample=dskntsit.wav
+<region>seq_position=2 sample=dsbrssit.wav
+
+//Hell Knight or Baron of Hell Death -> round robin 
+<group>key=79 seq_length=2
+<region>seq_position=1 sample=dskntdth.wav
+<region>seq_position=2 sample=dsbrsdth.wav
+
+//Cyberdemon sight
+<region>key=80  sample=dscybsit.wav
+
+//Cyberdemon walk
+<region>key=81  sample=dshoof.wav
+
+//Cyberdemon sight
+<region>key=82  sample=dscybdth.wav
+
+// SS Nazi sight 
+<region>key=83  sample=dssssit.wav
+
+// SS Nazi death
+<region>key=84  sample=dsssdth.wav
+
+// Gibbed
+<region>key=85 sample=dsslop.wav

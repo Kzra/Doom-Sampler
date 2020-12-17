@@ -1,0 +1,46 @@
+<global>loop_mode=one_shot
+
+//punch firing
+<region>key=36 sample=dspunch.wav
+
+//chainsaw : select, idling or hitting -> random robin
+<group>key=37 
+<region>hirand=0.33 sample=dssawup.wav
+<region>lorand=0.33 hirand=0.66 sample=dssawidl.wav
+<region>lorand=0.66 sample=dssawhit.wav
+
+//chainsaw firing
+<region>key=38 sample=dssawful.wav
+
+// pistol firing
+<region>key=40 sample=dspistol.wav
+
+// shotgun firing 
+<region>key=41 sample=dsshotgn.wav
+
+// super shotgun : opening, reloading and closing -> round robin 
+<group>key=42 seq_length=3
+<region>seq_position=1 sample=dsdbopn.wav
+<region>seq_position=2 sample=dsdbload.wav
+<region>seq_position=3 sample=dsdbcls.wav
+
+// super shotgun firing
+<region>key=43 sample=dsdshtgn.wav
+
+// rocket launcher firing
+<region>key=45 sample=dsrlaunc.wav
+
+// rocket launcher hitting
+<region>key=47 sample=dsbarexp.wav
+
+//plasma gun firing
+<region>key=48 sample=dsplasma.wav
+
+//plasma gun hitting
+<region>key=50 sample=dsfirxpl.wav
+
+//bfg firing
+<region>key=52 sample=dsbfg.wav
+
+//bfg hitting
+<region>key=53 sample=dsrxplod.wav
