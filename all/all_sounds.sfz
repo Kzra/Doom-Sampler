@@ -1,0 +1,166 @@
+<global>loop_mode=one_shot
+
+//single keys....
+
+//lift start 
+<region>key=12 sample=other/dspstart.wav
+
+//lift stop
+<region>key=14 sample=other/dspstop.wav
+
+//switch on
+<region>key=19 sample=other/dsswtchn.wav
+
+//switch off
+<region>key=21 sample=other/dsswtchx.wav
+
+//weapon pickup
+<region>key=23 sample=other/dswpnup.wav
+
+//powerup
+<region>key=14 sample=other/dsgetpow.wav
+
+//teleport
+<region>key=14 sample=other/dstelept.wav
+
+//punch firing
+<region>key=36 sample=guns/dspunch.wav
+
+//chainsaw firing
+<region>key=38 sample=guns/dssawful.wav
+
+// pistol firing
+<region>key=40 sample=guns/dspistol.wav
+
+// shotgun firing 
+<region>key=41 sample=guns/dsshotgn.wav
+
+// super shotgun firing
+<region>key=43 sample=guns/dsdshtgn.wav
+
+// rocket launcher firing
+<region>key=45 sample=guns/dsrlaunc.wav
+
+// rocket launcher hitting
+<region>key=47 sample=guns/dsbarexp.wav
+
+//plasma gun firing
+<region>key=48 sample=guns/dsplasma.wav
+
+//plasma gun hitting
+<region>key=50 sample=guns/dsfirxpl.wav
+
+//bfg firing
+<region>key=52 sample=guns/dsbfg.wav
+
+//bfg hitting
+<region>key=53 sample=guns/dsrxplod.wav
+
+//player activate 
+<region>key=60 sample=monster_calls/dsnoway.wav
+
+//player injured
+<region>key=61 sample=monster_calls/dsplpain.wav
+
+//zombie nearby
+<region>key=65 sample=monster_calls/dsposact.wav
+
+//zombie injured
+<region>key=66 sample=monster_calls/dspopain.wav
+
+//imp nearby
+<region>key=70 sample=monster_calls/dsbgact.wav
+
+//Demon sight
+<region>key=72 sample=monster_calls/dssgtsit.wav
+
+//Demon nearby
+<region>key=73 sample=monster_calls/dsdmact.wav
+
+//Demon attack
+<region>key=74  sample=monster_calls/dssgtatk.wav
+
+//Demon injured
+<region>key=75 sample=monster_calls/dsdmpain.wav
+
+//Demon death
+<region>key=76  sample=monster_calls/dssgtdth.wav
+
+//Cyberdemon sight
+<region>key=80  sample=monster_calls/dscybsit.wav
+
+//Cyberdemon walk
+<region>key=81  sample=monster_calls/dshoof.wav
+
+//Cyberdemon sight
+<region>key=82  sample=monster_calls/dscybdth.wav
+
+// SS Nazi sight 
+<region>key=83  sample=monster_calls/dssssit.wav
+
+// SS Nazi death
+<region>key=84  sample=monster_calls/dsssdth.wav
+
+// Gibbed
+<region>key=85 sample=monster_calls/dsslop.wav
+
+// groups....
+
+//door opening : 1 or 2 -> round robin
+<group>key=16 seq_length=2 
+<region>seq_position=1 sample=other/dsdoropn.wav
+<region>seq_position=2 sample=other/dsbdopn.wav
+
+//door closing: 1 or 2 -> round robin
+<group>key=17 seq_length=2 
+<region>seq_position=1 sample=other/dsdorcls.wav
+<region>seq_position=2 sample=other/dsbdcls.wav
+
+//chainsaw : select, idling or hitting -> random robin
+<group>key=37 
+<region>hirand=0.33 sample=guns/dssawup.wav
+<region>lorand=0.33 hirand=0.66 sample=guns/dssawidl.wav
+<region>lorand=0.66 sample=guns/dssawhit.wav
+
+// super shotgun : opening, reloading and closing -> round robin 
+<group>key=42 seq_length=3
+<region>seq_position=1 sample=guns/dsdbopn.wav
+<region>seq_position=2 sample=guns/dsdbload.wav
+<region>seq_position=3 sample=guns/dsdbcls.wav
+
+//player : death 1 2 or 3(gibbed) -> round robin
+<group>key=62 seq_length=2 
+<region>seq_position=1 sample=monster_calls/dspldeth.wav
+<region>seq_position=2 sample=monster_calls/dspdiehi.wav
+
+//zombie : sight 1 2 or 3-> round robin
+<group>key=64 seq_length=3
+<region>seq_position=1 sample=monster_calls/dsposit1.wav
+<region>seq_position=2 sample=monster_calls/dsposit2.wav
+<region>seq_position=3 sample=monster_calls/dsposit3.wav
+
+//zombie : death 1 2 3 -> round robin
+<group>key=67 seq_length=3
+<region>seq_position=1 sample=monster_calls/dspodth1.wav
+<region>seq_position=2 sample=monster_calls/dspodth2.wav
+<region>seq_position=3 sample=monster_calls/dspodth3.wav
+
+//imp: sight 1 or 2 -> round robin 
+<group>key=69 seq_length=2
+<region>seq_position=1 sample=monster_calls/dsbgsit1.wav
+<region>seq_position=2 sample=monster_calls/dsbgsit2.wav
+
+//imp: death 1 or 2 -> round robin 
+<group>key=71 seq_length=2
+<region>seq_position=1 sample=monster_calls/dsbgdth1.wav
+<region>seq_position=2 sample=monster_calls/dsbgdth2.wav
+
+//Hell Knight or Baron of Hell Sight -> round robin 
+<group>key=77 seq_length=2 
+<region>seq_position=1 sample=monster_calls/dskntsit.wav
+<region>seq_position=2 sample=monster_calls/dsbrssit.wav
+
+//Hell Knight or Baron of Hell Death -> round robin 
+<group>key=79 seq_length=2
+<region>seq_position=1 sample=monster_calls/dskntdth.wav
+<region>seq_position=2 sample=monster_calls/dsbrsdth.wav
