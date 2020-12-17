@@ -10,7 +10,7 @@ With sforzando running in standalone mode, or in a DAW, open one of the folders 
 - other: DOOM and DOOM II environment and other samples 
 - all: all the above sounds, separated by octaves
 
-Keys are mapped to either a single sound, or a round robin of related sounds. Have a look at the .sfz files and [this guide](https://sfzformat.com) for more information! 
+Keys are mapped to either a single sound, or a round robin of related sounds. Have a look at the .sfz files and [this guide](https://sfzformat.com) for more information.
 
 All samples downloaded from http://www.wolfensteingoodies.com/archives/olddoom/music.htm
 
