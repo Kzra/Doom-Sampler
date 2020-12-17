@@ -1,7 +1,7 @@
 # Doom-Sampler
 Doom .sfz and associated .wav files for the plogue sforzando sample player
 
-[Example video.](https://www.youtube.com/watch?v=WTJy4zaw2kg)
+[Sampler in action](https://www.youtube.com/watch?v=WTJy4zaw2kg)
 
 To use, download [sforzando a free SFZ compliant sample player](https://www.plogue.com/products/sforzando.html) from Plogue.  
 With sforzando running in standalone mode, or in a DAW, open one of the folders and drag the .sfz file of your choice over the user interface; the samples will load automatically. 
